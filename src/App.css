@@ -1,38 +1,387 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0;
+  font-family: 'Anek Telugu', sans-serif;
+  font-weight: 600;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home, .adopt, .FAQ, .donate {
   display: flex;
-  flex-direction: column;
+  height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 2rem;
+}
+
+.adopt {
+  background-image: url('');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
+  font-size: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.FAQ {
+  background-image: src("https://images.unsplash.com/photo-1521128591876-b4ace034003a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.donate {
+  background-image: url('');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 100px;
+}
+
+/* Body Section */
+body{
+margin: 0;
+}
+
+/* Main Section */
+.main{
+margin-top: 20vw;
+}
+
+#heroImg{
+background-image:url("https://www.kiewit.com/wp-content/uploads/2019/12/Nebraska-Humane-Society-Judy-Varner-Adoption-and-Education-Center_1.jpg");
+padding-bottom: 3rem;
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+
+}
+
+#imgCaption{
+font-size: 1.5rem;
+padding-bottom: 3rem;
+}
+
+#events{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+#header{
+font-family: 'Anek Telugu', sans-serif;
+font-weight: 600;
+font-size: 3.5rem;
+text-align: center;
+color: #333B56;
+padding-top: 3rem;
+padding-top: 3rem;
+padding-bottom: 3rem;
+}
+
+#header5{
+font-family: 'Anek Telugu', sans-serif;
+font-weight: 600;
+font-size: 3.5rem;
+text-align: center;
+color: white;
+padding-top: 10rem;
+padding-bottom: 6rem;
+text-shadow: 3px 3px #628292;
+}
+
+#ourMission{
+font-family: 'Anek Telugu', sans-serif;
+font-weight: 400;
+color: #333B56;
+width: 30rem;
+border: .35rem solid #628292;
+border-radius: 30vw;
+margin: 1vw;
+padding: 3vw;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+#header2{
+font-family: 'Anek Telugu', sans-serif;
+font-weight: 600;
+font-size: 3.5rem;
+text-align: center;
+color: #333B56;
+padding-top: 3rem;
+padding-bottom: 3rem;
+}
+
+#adoptableDogs{
+width: 15rem;
+height: 15rem;
+object-fit: cover;
+overflow: hidden;
+margin: 5 auto;
+padding: 1rem;
+}
+
+#dawgs{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: 3vw;
+}
+
+#dawglabel{
+text-align: center;
+font-family: 'Anek Telugu', sans-serif;
+font-weight: 200;
+font-size: 1.5rem;
+}
+
+#tieandtails{
+width: 40rem;
+border-radius: 40vw;
+padding-bottom: 3rem;
+
+border: 2px solid #333B56; /* the 'strokes' of the arc */
+display: inline-block;
+min-width: 4em; /* the width of the innermost element */
+min-height: 4em; /* the height of the innermost element */
+padding: 0.5em; /* the spacing between each arc */
+border-radius: 50%; /* for making the elements 'round' */
+border-top-color: transparent; /* hiding the top border */
+border-bottom-color: transparent;
+}
+
+/* page break */
+
+hr{
+width: 90%;
+color: #333B56;
+font-weight: bold;
+}
+
+/* footer */
+
+#footerContainer{
+font-family: 'Anek Telugu', sans-serif;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding-left: 3vw;
+padding-right: 3vw;
+padding-bottom: 5vw;
+padding-top: 2vw;
+margin-left: 10vw;
+margin-right: 10vw;
+}
+
+#footerTitle{
+color: white;
+font-weight: 600;
+}
+
+#footerInfo{
+font-weight: 200;
+color: white;
+}
+
+#locationContainer, #adoptionHoursContainer, #businessHoursContainer{
+background-color: #333B56;
+width: 25vw;
+padding: 2vw;
+}
+
+/* adopt page */
+
+#adoptdawgs{
+width: 100%;
+padding: 5rem;
+padding-top: 1rem !important;
+}
+
+#adoptdawg{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1rem;
+}
+
+#adoptableDogspic{
+height: 35vw;
+width: 25vw;
+object-fit: cover;
+}
+
+#dawgcaption{
+display: flex;
+font-size: 1.5vw;
+padding-left: 1rem;
+font-weight: 400;
+}
+
+#emailLink{
+text-decoration: none;
+color: #628292;
+font-weight: 400;
+padding-left: 1rem;
+font-size: 1rem;
+
+}
+
+/* donate page */
+
+#donateheader{
+text-align: center;
+color: white;
+background-color: #628292;
+font-size: 2rem;
+padding: .5rem;
+}
+
+#namecontainer, #amountContainer, #cardContainer, #buttonDiv{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+padding: .25rem;
+}
+
+#namecontainer{
+padding-top: 3rem;
+padding-bottom: 1rem;
+}
+
+#cardContainer{
+padding-bottom: 1rem;
+padding-top: 1rem;
+}
+
+#cardText, #amountText, #fnameText, #lnameText{
+font-size: 1.25rem;
+padding-right: .5rem;
+}
+
+#amountButton{
+border: none;
+background-color: #333B56;
+color: white;
+padding-left: 5rem;
+padding-right: 5rem;
+display: flex;
+text-align: center;
+padding: 8px 25px;
+font-size: 1rem;
+border-radius: 10px;
+}
+
+#amountButton:hover{
+transition: all .2s ease-in-out;
+transform: scale(1.2);
+background: white;
+color: #333B56;
+transition: 250ms;
+border: 2px solid #333B56;
+}
+
+#submitButton{
+border: none;
+background-color: #628292;
+color: white;
+padding-left: 5rem;
+padding-right: 5rem;
+display: flex;
+text-align: center;
+padding: 8px 20px;
+font-size: 1.5rem;
+border-radius: 10px;
+}
+
+#submitButton:hover{
+transition: all .2s ease-in-out;
+transform: scale(1.2);
+background: white;
+color: #628292;
+transition: 250ms;
+border: 2px solid #333B56;
+}
+
+#ccn, #otherAmount, #fname, #lname{
+font-size: 1.5rem;
+}
+
+#header3{
+font-size: 2rem;
+color: #628292;
+}
+
+#donation-form-container{
+padding-bottom: 3rem;
+}
+
+/* ways to give page  */
+
+#summary{
+font-family: 'Anek Telugu', sans-serif;
+font-weight: 400;
+color: #333B56;
+width: 40rem;
+border-radius: 30vw;
+margin: 1vw;
+padding: 3vw;
+margin-left: auto;
+margin-right: auto;
+display: block;
+background-color: white;
+}
+
+#waysToGiveCards{
+padding-top: 3rem;
+padding-bottom: 3rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+#waysToGiveCard{
+width: 30vw;
+margin: 5 auto;
+padding: 1rem;
+}
+
+#cardlabel{
+font-weight: 400;
+}
+
+#headerandsummary{
+background-image:url("https://images.unsplash.com/photo-1579208575657-c595a05383b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+padding-bottom: 3rem;
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+#header4{
+color: white;
+font-family: 'Anek Telugu', sans-serif;
+font-weight: 600;
+font-size: 3.5rem;
+text-align: center;
+padding-top: 3rem;
+padding-bottom: 3rem;
+}
+
+#Aboutcontainer{
+background-image:url("https://images.unsplash.com/photo-1594004844563-536a03a6e532?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+padding-bottom: 3rem;
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
+position: relative;
 }
